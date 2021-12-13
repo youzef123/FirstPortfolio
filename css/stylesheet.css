@@ -1,0 +1,115 @@
+@import url('http://fonts.cdnfonts.com/css/arcade-classic');
+
+
+.row{
+  grid: 2;
+}
+
+.navbar{
+  font-family: 'ArcadeClassic', sans-serif;
+    color: aliceblue;
+    display: flex;
+    background-color:#282E34;
+    border: 1px solid #a2a2a2;
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+    position: sticky;
+    top: 0;
+    z-index:3
+}
+
+.navbar a{
+    color: aliceblue;
+}
+
+
+.the-type{
+  margin-right: 3rem;
+}
+
+.parent {
+    border-radius: 1.5rem;
+    overflow: hidden;
+    transition: transform .5s cubic-bezier(.31,2.71,.8,.9);
+    transform-origin: 50% 50%;
+}
+
+.parent canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.parent:hover {
+transform: scale(1.05);
+}
+
+.card {
+  font-family: 'ArcadeClassic', sans-serif;
+  color: aliceblue;
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+    z-index:1;
+}
+
+.pixelart-bg{
+    background-image: url('../images/bg.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+.mask{
+    padding: 4rem;
+}
+
+.gradient-custom {
+    /* fallback for old browsers */
+    background: #a18cd1;
+
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(
+      45deg,
+      rgba(9, 80, 67, 0.6),
+      rgba(29, 4, 70, 0.6) 100%
+    );
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(
+      45deg,
+      rgba(9, 80, 67, 0.6),
+      rgba(29, 4, 70, 0.6) 100%
+    );
+  }
+
+.content{
+  color: azure;
+  font-family: "Raleway", sans-serif;
+  border: 3px solid #a2a2a2;
+  justify-content: center;
+  position: relative;
+  top: 0;
+  background-color:#1d2125;
+  background-size: cover;
+  
+}
+
+.container{
+  border-radius: 1rem;
+  background-color:#282e3470;
+  background-size: cover;
+  font-size: 3vh;
+}
+
+.li{
+  font-size: 1.3rem;
+}
+
+.top h4{
+  float: right;
+  line-height: 3;
+}
