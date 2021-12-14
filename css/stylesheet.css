@@ -1,8 +1,18 @@
 @import url('http://fonts.cdnfonts.com/css/arcade-classic');
 
+hr{
+  border-top: 2px solid rgb(206, 63, 38);
+  position: relative;
+}
 
-.row{
-  grid: 2;
+.nav-item{
+  transition: all .5s ease-in;
+}
+
+.nav-link:hover {
+  transform: scale(1.1);
+  text-decoration: underline;
+  text-decoration-color: rgb(206, 63, 38);
 }
 
 .navbar{
@@ -93,14 +103,14 @@ transform: scale(1.05);
   justify-content: center;
   position: relative;
   top: 0;
-  background-color:#1d2125;
+  background-color:#282E34;
+ 
   background-size: cover;
-  
 }
 
 .container{
   border-radius: 1rem;
-  background-color:#282e3470;
+  background-color:#14171a;
   background-size: cover;
   font-size: 3vh;
 }
@@ -110,6 +120,59 @@ transform: scale(1.05);
 }
 
 .top h4{
-  float: right;
+  text-align: center;
   line-height: 3;
 }
+
+.tech-stack .icon-box{
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  transition: ease-in-out 0.3s;
+}
+
+.tech-stack img{
+  /* float: right;
+  width: 3rem;
+  height: auto;
+  padding-left: 1rem;
+  align-items: center; */
+}
+
+.tech-stack h4{
+
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-size: 20px;
+  color: #fff;
+}
+
+.tech-stack .icon-box h4 {
+  padding-right: 5px;
+  line-height: 1;
+}
+
+.tech-stack i {
+  font-size: 32px;
+  line-height: 1;
+}
+
+.tech-stack .icon-box:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+
+@media only screen and (max-width: 768px) {
+  .tech-stack .icon-box{
+   
+    margin-top: 0.7rem;
+  }
+  .icon-box{
+    justify-content: center;
+    width: 15rem;
+  }
+}  

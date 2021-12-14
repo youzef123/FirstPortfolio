@@ -16,7 +16,7 @@ img{
     height:auto;
   }
 
-.col{
+.col .card img{
     position: relative;
     width: 100%;
     height: auto;
@@ -36,7 +36,7 @@ img{
     display:inline;
 }
 
-.card  .content-overlay {
+.card .content-overlay {
     background: rgba(0,0,0,0.7);
     position: absolute;
     width: 100%;
@@ -91,6 +91,15 @@ img{
     justify-content: center;
 }
 
+.nav-item{
+    transition: all .5s ease-in;
+}
+
+.nav-link:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+    text-decoration-color: rgb(206, 63, 38);
+}
 
 .navbar{
     font-family: 'ArcadeClassic', sans-serif;
@@ -114,17 +123,14 @@ img{
 
 @media only screen and (max-width: 768px) {
     .container .card{
+        position: relative;
      width: 10%;
      height: 10%;
     }
+  
     
-    h1, h4{
-        font-size: 1vh;
-    }
-    #meme{
-       
-    }
-    #ecommerce{
+    h1 {
      
     }
+   
 }  

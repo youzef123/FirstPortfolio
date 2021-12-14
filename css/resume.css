@@ -1,0 +1,88 @@
+
+*{
+    color:whitesmoke;
+}
+
+body{
+    background-color: black;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+.nav-item{
+    transition: all .5s ease-in;
+}
+
+.nav-link:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+    text-decoration-color: rgb(206, 63, 38);
+}
+
+.container{
+    top: 0;
+    left: 0;
+    background-color: #1d2125;
+}
+
+img{
+    transition: all .3s ease;
+}
+
+img:hover{
+    transform: scale(1.5);
+}
+
+/* h1, h2,
+h3, h4,
+h5, h6{
+    color:whitesmoke;
+} */
+li{
+    font-size: medium;
+}
+
+h1{
+    font-weight: bold;
+}
+
+h4{
+    font-style: normal;
+}
+
+.school img{
+    margin-right: 10px;
+    width: 3rem;
+    height: auto;   
+}
+
+.school{
+    align-items: center;
+}
+
+.software-logo{
+    align-items: center;
+}
+
+.software-logo img{
+    width: 3rem;
+    padding-left: 1rem;
+}
+
+.software-logo #figma{
+    width: 2.3rem;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .tech-stack .icon-box{
+     
+      margin-top: 0.7rem;
+    }
+    .icon-box{
+      justify-content: center;
+      width: 15rem;
+    }
+  }  
