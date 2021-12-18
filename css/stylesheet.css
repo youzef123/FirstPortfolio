@@ -1,5 +1,19 @@
 @import url('http://fonts.cdnfonts.com/css/arcade-classic');
 
+html, body{
+  font: bold 14px/1.4 'Open Sans', arial, sans-serif;
+  background: #000;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; 
+}
+
+.navbar .nav-link a{
+  padding-left: 2rem;
+}
+
 hr{
   border-top: 2px solid rgb(206, 63, 38);
   position: relative;
@@ -16,7 +30,8 @@ hr{
 }
 
 .navbar{
-  font-family: 'ArcadeClassic', sans-serif;
+  margin: 0;
+  
     color: aliceblue;
     display: flex;
     background-color:#282E34;
@@ -33,10 +48,6 @@ hr{
     color: aliceblue;
 }
 
-
-.the-type{
-  margin-right: 3rem;
-}
 
 .parent {
     border-radius: 1.5rem;
@@ -109,6 +120,8 @@ transform: scale(1.05);
 }
 
 .container{
+  width: 100%;
+  height: 100%;
   border-radius: 1rem;
   background-color:#14171a;
   background-size: cover;
@@ -165,13 +178,53 @@ transform: scale(1.05);
   background: rgba(255, 255, 255, 0.12);
 }
 
+@media only screen and (max-width: 990px) {
+  .container .icon-box{
+    display: flex;
+    padding: 1rem;
+  }
+  .tech-stack .icon-box{
+   font-size: 10vh;
+   
+  }
+  .icon-box{
+ 
+    width: 5rem;
+  }
+} 
 
 @media only screen and (max-width: 768px) {
+  .container .icon-box{
+    
+  }
   .tech-stack .icon-box{
-   
+    
     margin-top: 0.7rem;
   }
   .icon-box{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 15rem;
+  }
+} 
+
+@media only screen and (max-width: 300px) {
+  body{
+  
+  }
+  .container .icon-box{
+  width: 10rem;
+  }
+  .tech-stack .icon-box{
+    margin-top: 0.7rem;
+  }
+  .icon-box{
+    font-size: 0.2px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     justify-content: center;
     width: 15rem;
   }

@@ -3,6 +3,15 @@
     color:whitesmoke;
 }
 
+html, body{
+    font: bold 14px/1.4 'Open Sans', arial, sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
 body{
     background-color: black;
 }
@@ -24,8 +33,11 @@ ul li{
 .container{
     top: 0;
     left: 0;
+    margin: 0 auto;
     background-color: #1d2125;
 }
+
+
 
 img{
     transition: all .3s ease;
@@ -52,6 +64,14 @@ h4{
     font-style: normal;
 }
 
+nav nav-link{
+
+}
+
+.collapse h1{
+   float: right;
+}
+
 .school img{
     margin-right: 10px;
     width: 3rem;
@@ -74,7 +94,6 @@ h4{
 .software-logo #figma{
     width: 2.3rem;
 }
-
 
 @media only screen and (max-width: 768px) {
     .tech-stack .icon-box{
