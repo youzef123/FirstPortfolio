@@ -273,6 +273,27 @@ transform: scale(1.05);
  
 } 
 
+@media only screen and (max-width: 400px) {
+  .container .icon-box{
+    width: 12rem;
+  }
+  .tech-stack .icon-box{
+     justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 0.7rem;
+  }
+  .icon-box{
+    font-size: 0.2px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 15rem;
+  }
+}  
+
 @media only screen and (max-width: 300px) {
   .container .icon-box{
     width: 10rem;
