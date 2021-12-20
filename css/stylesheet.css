@@ -1,7 +1,6 @@
-@import url('http://fonts.cdnfonts.com/css/arcade-classic');
 
-html, body{
-  font: bold 14px/1.4 'Open Sans', arial, sans-serif;
+body{
+  font: 14px/1.4 'Open Sans', arial, sans-serif;
   background: #000;
   width: 100%;
   height: 100%;
@@ -10,8 +9,20 @@ html, body{
   overflow-x: hidden; 
 }
 
+button{
+  color: white;
+}
+
+html{
+  overflow-x: hidden; 
+}
+
 .navbar .nav-link a{
   padding-left: 2rem;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#008000' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
 hr{
@@ -19,35 +30,43 @@ hr{
   position: relative;
 }
 
-.nav-item{
-  transition: all .5s ease-in;
+ul li{
+  padding-left: 1rem;
+  font-size: 20px;
+  list-style-type: none;
+}
+
+.nav-link{
+  transition: all .1s ease-in;
 }
 
 .nav-link:hover {
   transform: scale(1.1);
-  text-decoration: underline;
-  text-decoration-color: rgb(206, 63, 38);
+  /* text-decoration: underline;
+  text-decoration-color: rgb(206, 63, 38); */
 }
 
 .navbar{
   margin: 0;
-  
-    color: aliceblue;
-    display: flex;
-    background-color:#282E34;
-    border: 1px solid #a2a2a2;
+  color: aliceblue;
+  display: flex;
+  background-color:#282e34ea;
+  border: 1px solid #a2a2a2;
 	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
 	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
-    position: sticky;
-    top: 0;
-    z-index:3
+  position: sticky;
+  top: 0;
+  z-index:3;
 }
 
 .navbar a{
     color: aliceblue;
 }
 
+.name h1{
+  font-weight: bold;
+}
 
 .parent {
     border-radius: 1.5rem;
@@ -67,12 +86,12 @@ transform: scale(1.05);
 }
 
 .card {
-  font-family: 'ArcadeClassic', sans-serif;
+
   color: aliceblue;
-    margin: 0 auto; /* Added */
-    float: none; /* Added */
-    margin-bottom: 10px; /* Added */
-    z-index:1;
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
+  z-index:1;
 }
 
 .pixelart-bg{
@@ -146,14 +165,6 @@ transform: scale(1.05);
   transition: ease-in-out 0.3s;
 }
 
-.tech-stack img{
-  /* float: right;
-  width: 3rem;
-  height: auto;
-  padding-left: 1rem;
-  align-items: center; */
-}
-
 .tech-stack h4{
 
   font-weight: 600;
@@ -178,46 +189,99 @@ transform: scale(1.05);
   background: rgba(255, 255, 255, 0.12);
 }
 
-@media only screen and (max-width: 990px) {
-  .container .icon-box{
-    display: flex;
+
+.nav-link:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 4;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  background: rgb(206, 63, 38);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.nav-link:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+@media only screen and (max-width: 1200px) {
+  .container{
+    
     padding: 1rem;
   }
+  
+  .nav-link:hover {
+    transform: translate(10px);
+  }
+
   .tech-stack .icon-box{
    font-size: 10vh;
    
   }
-  .icon-box{
- 
-    width: 5rem;
+  .tech-stack i{
+    font-size: 20px;
+  }
+  .tech-stack h4{
+    font-size: 16px;
+  }
+  .tech-stack{
+    padding: 0;
+    width: 50rem;
+  }
+  .tech-stack .icon-box{
+    padding: 1rem;
+    width: 110%;
   }
 } 
 
 @media only screen and (max-width: 768px) {
-  .container .icon-box{
-    
+  .nav-link:hover {
+    transform: translate(10px);
+  }
+  .container .tech-stack{
+    justify-content: center;
+    align-items: center;
+    font-size:  30px;
+  flex-direction: column;
+  }
+  .tech-stack i{
+    font-size: 32px;
+  }
+  .tech-stack h4{
+    font-size:  20px;
   }
   .tech-stack .icon-box{
-    
     margin-top: 0.7rem;
   }
-  .icon-box{
+  .navbar-brand, li{
+    padding: 0;
+  }
+  .tech-stack{
+    width: 20rem;
+  }
+  .tech-stack .icon-box{
     justify-content: center;
     align-items: center;
     text-align: center;
     justify-content: center;
-    width: 15rem;
+    width: 16rem;
+    margin-left: 10px;
   }
+ 
 } 
 
 @media only screen and (max-width: 300px) {
-  body{
-  
-  }
   .container .icon-box{
-  width: 10rem;
+    width: 10rem;
   }
   .tech-stack .icon-box{
+     justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
     margin-top: 0.7rem;
   }
   .icon-box{

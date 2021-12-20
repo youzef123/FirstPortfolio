@@ -1,30 +1,11 @@
-@import url('http://fonts.cdnfonts.com/css/arcade-classic');
-
-
-body, html{
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -o-user-select: none;
-    user-select: none;
-    background-color: #1d2125;
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
-    font: bold 14px/1.4 'Open Sans', arial, sans-serif;
-}
-
 img{
     display: block;
     width: 100%;
     height:auto;
   }
 
-.row{
-    
+.name h1{
+    font-weight: bold;
 }
 
 .card{    
@@ -55,6 +36,10 @@ img{
 .phone-card img{
     left: 20px;
     top: 20px;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#008000' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
 .container{
@@ -98,27 +83,11 @@ img{
 
 .nav-link:hover {
     transform: scale(1.1);
-    text-decoration: underline;
-    text-decoration-color: rgb(206, 63, 38);
 }
 
-.navbar{
-    font: bold 14px/1.4 'Open Sans', arial, sans-serif;
-      color: aliceblue;
-      display: flex;
-      background-color:#282E34;
-      border: 1px solid #a2a2a2;
-      -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
-      -moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
-      box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
-      position: sticky;
-      top: 0;
-      z-index: 5
-  }
-  
-  .navbar a{
-      color: aliceblue;
-  }
+.navbar a{
+color: aliceblue;
+}
 
 /* Mobile */
 @media only screen and (max-width: 1000px) {
@@ -141,7 +110,9 @@ img{
      font-size: 15px;
   
  }  
-
+ .nav-link:hover {
+    transform: translate(10px);
+  }
 }  
 
 @media only screen and (max-width: 600px) {
