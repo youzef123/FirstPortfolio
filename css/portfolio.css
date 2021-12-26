@@ -1,10 +1,21 @@
+body{
+    /* Unable to copy */
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
 img{
     display: block;
-    width: 100%;
-    height:auto;
-  }
+    max-width: 100%;
+    min-width: 300px;
+    height: auto;
+}
 
-.name h1{
+h1{
     font-weight: bold;
 }
 
@@ -31,7 +42,7 @@ img{
     -moz-transition: all 0.4s ease-in-out 0s;
     transition: all 0.4s ease-in-out 0s;
     z-index: 2;
-  }
+}
 
 .phone-card img{
     left: 20px;
@@ -49,7 +60,6 @@ img{
 
 .container h1, h4{
     position: relative;
-    padding: 10rem;
     display: inline-block;
     color: rgb(255, 255, 255);
     opacity: 0;
@@ -98,7 +108,7 @@ color: aliceblue;
     .card h4{
         font-size: 20px;
     }  
-   
+    
    }  
 
 @media only screen and (max-width: 768px) {
@@ -110,22 +120,47 @@ color: aliceblue;
      font-size: 15px;
   
  }  
+ .card h1,h4{
+     padding: 1px;
+ }
  .nav-link:hover {
     transform: translate(10px);
   }
-}  
+}
 
 @media only screen and (max-width: 600px) {
+
     .card h1{
-       font-size: 35px;
+        font-weight: bold;
+        font-size: 30px;
     }
     .card h4{
-        font-size: 18px;
-     
+        font-size: 20px;
     }  
-   .row{
-       display: grid;
-       width: 100%;
-       height: auto;
-   }
+    .row{
+        display: grid;
+        width: 100%;
+        height: auto;
+    }
+   }  
+
+@media only screen and (max-width: 400px) {
+
+    .card h1{
+        font-weight: bold;
+        font-size: 25px;
+    }
+    .card h4{
+        font-size: 15px;
+    }  
+
+    .card h1,h4{
+        padding: 0;
+    }
+    .row{
+        hyphens: auto;
+        display: grid;
+        width: 100%;
+        height: auto;
+    }
    }  
